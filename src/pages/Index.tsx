@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+import { Button } from '@/components/ui/button';
 import { AuthForm } from '@/components/AuthForm';
 import { GeminiQuestions } from '@/components/GeminiQuestions';
 import backgroundImage from '@/assets/femnest-background.jpg';
@@ -47,6 +49,15 @@ const Index = () => {
           {showQuestions && (
             <div className="animate-in slide-in-from-bottom-4 duration-500">
               <GeminiQuestions />
+              
+              {/* Navigation to Personal Info */}
+              <div className="mt-6 text-center">
+                <Link to="/personal-info">
+                  <Button variant="outline" className="border-white text-white hover:bg-white hover:text-magenta-dark backdrop-blur-sm bg-white/10">
+                    Complete Your Profile →
+                  </Button>
+                </Link>
+              </div>
             </div>
           )}
         </div>
