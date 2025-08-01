@@ -18,6 +18,9 @@ const buttonVariants = cva(
           "bg-secondary text-secondary-foreground hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
+        hero: "bg-gradient-to-r from-magenta to-magenta-light text-white hover:from-magenta-dark hover:to-magenta shadow-lg hover:shadow-xl transition-all duration-300",
+        toggle: "bg-transparent text-white font-semibold transition-all duration-300 data-[active=true]:bg-white data-[active=true]:text-magenta-dark",
+        gemini: "bg-gradient-to-r from-magenta-dark to-magenta text-white hover:from-magenta hover:to-magenta-light shadow-md hover:shadow-lg transition-all duration-300",
       },
       size: {
         default: "h-10 px-4 py-2",

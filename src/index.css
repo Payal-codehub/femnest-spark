@@ -9,34 +9,52 @@ All colors MUST be HSL.
 @layer base {
   :root {
     --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --foreground: 310 45% 15%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 310 45% 15%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 310 45% 15%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 320 100% 27.3%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 320 25% 95%;
+    --secondary-foreground: 320 100% 27.3%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 320 10% 96%;
+    --muted-foreground: 320 10% 45%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 320 50% 88%;
+    --accent-foreground: 320 100% 27.3%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 320 20% 90%;
+    --input: 320 20% 90%;
+    --ring: 320 100% 27.3%;
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
+
+    /* FemNest Design System */
+    --magenta: 320 100% 27.3%;
+    --magenta-light: 320 70% 50%;
+    --magenta-dark: 320 100% 17%;
+    --magenta-glow: 320 100% 85%;
+    
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--magenta)), hsl(var(--magenta-light)));
+    --gradient-hero: linear-gradient(135deg, hsl(var(--magenta-dark)), hsl(var(--magenta)));
+    --gradient-subtle: linear-gradient(180deg, hsl(var(--background)), hsl(var(--magenta-glow)));
+    
+    /* Shadows */
+    --shadow-elegant: 0 10px 30px -10px hsl(var(--magenta) / 0.3);
+    --shadow-glow: 0 0 40px hsl(var(--magenta-light) / 0.4);
+    
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
     --sidebar-background: 0 0% 98%;
 
